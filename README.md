@@ -6,15 +6,15 @@ The Stream API is used to process collections of objects. A stream is a sequence
    - make heavy use of lambda expressions
    - ParallelStreams make it very easy to multi-thread operations
    
-   ##
+ 
    **A stream pipeline consists of a source, followed by zero or more intermediate operations  and a terminal operation**
    
-   ##Stream Source
+   ## Stream Source
    Streams can be created from Collections, Lists, Sets, ints, longs, foubles, arrays, lines of a file
    
    Stream operations are either **intermediate** or **terminal**
    
-   ##Intermediate Operations
+   ## Intermediate Operations
    - Zero or more intermediate operations are allowed
    - Order matters for large datasets: filter first, then sort or map
    - For every large datasets use ParallelStream to enable multiple threads
@@ -30,7 +30,7 @@ The Stream API is used to process collections of objects. A stream is a sequence
    - sorted()
    
    
-   ##Terminal Operations
+   ## Terminal Operations
    - One terminal operation is allowed.
    - forEach() applies the same function to each element
    - collect saves the elements into a collection
